@@ -66,14 +66,6 @@ F 3 "" H 3750 4500 50  0000 C CNN
 	1    3750 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 3600 5350 3600
-Wire Wire Line
-	5350 3600 5350 4250
-Wire Wire Line
-	5550 3400 5000 3400
-Wire Wire Line
-	5000 3400 5000 3600
 $Comp
 L GND #PWR?
 U 1 1 58E4F718
@@ -96,31 +88,27 @@ F 3 "" H 5000 3600 50  0000 C CNN
 	1    5000 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3300 4450 3300 4350
-Wire Wire Line
-	3300 4350 3450 4350
 $Comp
 L R R?
 U 1 1 58E4F7EA
-P 3650 3300
-F 0 "R?" V 3730 3300 50  0000 C CNN
-F 1 "RT2" V 3650 3300 50  0000 C CNN
-F 2 "" V 3580 3300 50  0000 C CNN
-F 3 "" H 3650 3300 50  0000 C CNN
-	1    3650 3300
-	0    1    1    0   
+P 4300 3700
+F 0 "R?" V 4380 3700 50  0000 C CNN
+F 1 "RT2" V 4300 3700 50  0000 C CNN
+F 2 "" V 4230 3700 50  0000 C CNN
+F 3 "" H 4300 3700 50  0000 C CNN
+	1    4300 3700
+	1    0    0    -1  
 $EndComp
 $Comp
 L R R?
 U 1 1 58E4F817
-P 3650 2700
-F 0 "R?" V 3730 2700 50  0000 C CNN
-F 1 "RT3" V 3650 2700 50  0000 C CNN
-F 2 "" V 3580 2700 50  0000 C CNN
-F 3 "" H 3650 2700 50  0000 C CNN
-	1    3650 2700
-	0    1    1    0   
+P 4300 3050
+F 0 "R?" V 4380 3050 50  0000 C CNN
+F 1 "RT3" V 4300 3050 50  0000 C CNN
+F 2 "" V 4230 3050 50  0000 C CNN
+F 3 "" H 4300 3050 50  0000 C CNN
+	1    4300 3050
+	-1   0    0    1   
 $EndComp
 $Comp
 L R R?
@@ -144,22 +132,25 @@ F 3 "" H 5850 4700 50  0000 C CNN
 	1    5850 4700
 	0    1    1    0   
 $EndComp
+Text HLabel 7000 3500 2    60   Input ~ 0
+VTRI
+Wire Wire Line
+	5550 3600 5350 3600
+Wire Wire Line
+	5350 3600 5350 4250
+Wire Wire Line
+	5550 3400 5000 3400
+Wire Wire Line
+	5000 3400 5000 3600
+Wire Wire Line
+	3300 4450 3300 4350
+Wire Wire Line
+	3300 4350 3450 4350
 Wire Wire Line
 	4050 4250 4550 4250
-Wire Wire Line
-	3800 3300 4300 3300
-Wire Wire Line
-	4300 3300 4300 4250
 Connection ~ 4300 4250
 Wire Wire Line
 	3100 4150 3450 4150
-Wire Wire Line
-	3100 2700 3100 4150
-Wire Wire Line
-	3100 3300 3500 3300
-Wire Wire Line
-	3500 2700 3100 2700
-Connection ~ 3100 3300
 Wire Wire Line
 	6150 3500 7000 3500
 Wire Wire Line
@@ -175,10 +166,39 @@ Wire Wire Line
 	5150 4700 5150 4250
 Connection ~ 5150 4250
 Wire Wire Line
-	3800 2700 6450 2700
-Wire Wire Line
 	6450 2700 6450 3500
 Connection ~ 6450 3500
-Text HLabel 7000 3500 2    60   Input ~ 0
-VTRI
+Wire Wire Line
+	4300 3850 4300 4250
+Wire Wire Line
+	4300 3550 4300 3200
+Wire Wire Line
+	4300 2900 4300 2700
+Wire Wire Line
+	4300 2700 6450 2700
+Wire Wire Line
+	4300 3350 3100 3350
+Wire Wire Line
+	3100 3350 3100 4150
+Connection ~ 4300 3350
+Wire Notes Line
+	2950 2850 4500 2850
+Wire Notes Line
+	4500 2850 4500 4950
+Wire Notes Line
+	4500 4950 2950 4950
+Wire Notes Line
+	2950 4950 2950 2850
+Text Notes 3650 3000 2    60   ~ 0
+Scmitt Trigger\n
+Wire Notes Line
+	4800 3000 4800 4950
+Wire Notes Line
+	4800 4950 6600 4950
+Wire Notes Line
+	6600 4950 6600 3000
+Wire Notes Line
+	6600 3000 4800 3000
+Text Notes 5350 3150 2    60   ~ 0
+Integrator\n
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Wednesday, April 05, 2017 'AMt' 03:53:24 AM
+update=Wednesday, April 05, 2017 'PMt' 02:55:31 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../H-Bridge
@@ -59,3 +57,5 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=Buck Supply-cache
+[general]
+version=1
