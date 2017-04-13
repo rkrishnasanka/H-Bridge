@@ -28,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:Buck Supply-cache
 LIBS:H-Bridge PWM Switching Circuit-cache
 EELAYER 25 0
 EELAYER END
@@ -117,18 +116,12 @@ Wire Wire Line
 Wire Wire Line
 	3700 3050 4250 3050
 Wire Wire Line
-	3350 3100 3350 3200
-Wire Wire Line
-	3350 3200 3350 3400
+	3350 3100 3350 3400
 Wire Wire Line
 	4250 3200 3350 3200
 Connection ~ 3350 3200
 Wire Wire Line
-	3350 2800 3350 2750
-Wire Wire Line
-	3350 2750 3350 2150
-Wire Wire Line
-	3350 2150 3350 1950
+	3350 1950 3350 2800
 Wire Wire Line
 	4250 2750 3350 2750
 Connection ~ 3350 2750
@@ -155,13 +148,9 @@ F 3 "" H 6150 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 3050 6150 3050
+	5150 3050 6750 3050
 Wire Wire Line
-	6150 3050 6750 3050
-Wire Wire Line
-	6150 2750 5700 2750
-Wire Wire Line
-	5700 2750 5150 2750
+	5150 2750 6150 2750
 Wire Wire Line
 	4800 2150 5700 2150
 Wire Wire Line
