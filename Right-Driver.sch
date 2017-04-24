@@ -114,8 +114,6 @@ Wire Wire Line
 Wire Wire Line
 	2350 3000 2350 3300
 Wire Wire Line
-	2950 3000 3650 3000
-Wire Wire Line
 	3650 3150 2350 3150
 Connection ~ 2350 3150
 Wire Wire Line
@@ -143,9 +141,9 @@ Wire Wire Line
 Wire Wire Line
 	4550 3150 4900 3150
 Wire Wire Line
-	4550 2700 4800 2700
+	4800 2700 4550 2700
 Wire Wire Line
-	4800 2700 4800 2150
+	4800 2150 4800 2700
 Wire Wire Line
 	4800 2150 4200 2150
 Text HLabel 5750 3000 2    60   Input ~ 0
@@ -171,4 +169,19 @@ Connection ~ 4800 2300
 Wire Wire Line
 	5500 2750 5500 3000
 Connection ~ 5500 3000
+$Comp
+L R R?
+U 1 1 58FE3C1F
+P 3300 3000
+F 0 "R?" V 3380 3000 50  0000 C CNN
+F 1 "1k" V 3300 3000 50  0000 C CNN
+F 2 "" V 3230 3000 50  0000 C CNN
+F 3 "" H 3300 3000 50  0000 C CNN
+	1    3300 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 3000 3650 3000
+Wire Wire Line
+	2950 3000 3150 3000
 $EndSCHEMATC
